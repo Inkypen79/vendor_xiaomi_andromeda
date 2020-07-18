@@ -18,6 +18,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/andromeda
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/andromeda/proprietary/bin/charger:$(TARGET_COPY_OUT_SYSTEM)/bin/charger \
     vendor/xiaomi/andromeda/proprietary/bin/iwpriv:$(TARGET_COPY_OUT_SYSTEM)/bin/iwpriv \
     vendor/xiaomi/andromeda/proprietary/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice \
     vendor/xiaomi/andromeda/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
