@@ -1,4 +1,4 @@
-service sigmahal /system/bin/sigma_miracasthalservice
+service sigmahal /system/system_ext/bin/sigma_miracasthalservice
   class main
   user system
   group audio
