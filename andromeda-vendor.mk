@@ -1267,7 +1267,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libtida@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtida@1.2.so \
-    vendor/xiaomi/andromeda/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustedapploader.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libultrasound.so:$(TARGET_COPY_OUT_VENDOR)/lib/libultrasound.so \
