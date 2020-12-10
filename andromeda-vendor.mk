@@ -622,6 +622,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.qti.sla.service@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.sla.service@1.0-service.rc \
+    vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
