@@ -1176,6 +1176,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
+    vendor/xiaomi/andromeda/proprietary/vendor/lib/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdma_file_agent.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/xiaomi/andromeda/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
