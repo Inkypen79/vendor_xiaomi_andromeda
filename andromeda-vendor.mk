@@ -18,10 +18,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/andromeda
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/andromeda/proprietary/bin/cameraserver:$(TARGET_COPY_OUT_SYSTEM)/bin/cameraserver \
     vendor/xiaomi/andromeda/proprietary/bin/charger:$(TARGET_COPY_OUT_SYSTEM)/bin/charger \
     vendor/xiaomi/andromeda/proprietary/bin/iwpriv:$(TARGET_COPY_OUT_SYSTEM)/bin/iwpriv \
-    vendor/xiaomi/andromeda/proprietary/etc/init/cameraserver.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/cameraserver.rc \
     vendor/xiaomi/andromeda/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/andromeda/proprietary/etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml \
     vendor/xiaomi/andromeda/proprietary/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml \
