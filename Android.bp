@@ -506,7 +506,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libCB.so"],
-			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "liblog", "libgsl", "libutils", "libnativewindow", "libvndksupport", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.mapper@4.0", "android.hardware.graphics.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.0", "vendor.qti.hardware.display.mapperextensions@1.1", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libCB.so"],
@@ -674,7 +674,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libOpenCL.so"],
-			shared_libs: ["libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libvndksupport", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libOpenCL.so"],
