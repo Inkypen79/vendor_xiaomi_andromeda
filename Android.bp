@@ -11553,6 +11553,15 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
+	name: "libsnpe_dsp_v66_domains_v2_skel",
+	filename: "libsnpe_dsp_v66_domains_v2_skel.so",
+	owner: "xiaomi",
+	src: "proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so",
+	relative_install_path: "adsp",
+	soc_specific: true,
+}
+
+prebuilt_rfsa {
 	name: "libsns_device_mode_skel",
 	filename: "libsns_device_mode_skel.so",
 	owner: "xiaomi",
