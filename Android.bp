@@ -12854,7 +12854,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so"],
-			shared_libs: ["libprotobuf-cpp-full", "libcutils", "liblog", "libhidlbase", "libutils", "libfmq", "libqcc_file_agent_sys", "vendor.qti.hardware.qccsyshal@1.2", "vendor.qti.hardware.qccsyshal@1.1", "vendor.qti.hardware.qccsyshal@1.0", "libz", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libprotobuf-cpp-full-21.7", "libcutils", "liblog", "libhidlbase", "libutils", "libfmq", "libqcc_file_agent_sys", "vendor.qti.hardware.qccsyshal@1.2", "vendor.qti.hardware.qccsyshal@1.1", "vendor.qti.hardware.qccsyshal@1.0", "libz", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
