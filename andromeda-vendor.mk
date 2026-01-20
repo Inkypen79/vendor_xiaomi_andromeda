@@ -1077,8 +1077,8 @@ PRODUCT_PACKAGES += \
     SoterService \
     TimeService \
     uceShimService \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     DeviceInfo \
     ImsRcsService \
     PowerOffAlarm \
