@@ -191,8 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/pm_test_item_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pm_test_item_config.xml \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/rcv.wav:$(TARGET_COPY_OUT_VENDOR)/etc/rcv.wav \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/rcv_hp.wav:$(TARGET_COPY_OUT_VENDOR)/etc/rcv_hp.wav \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
@@ -265,11 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/spk.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk.wav \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/spk_cal_pinknoise.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_pinknoise.wav \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/spk_cal_silence.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_silence.wav \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/spk_cal_sweep.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_sweep.wav \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/spk_cal_whitenoise.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_whitenoise.wav \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
@@ -285,7 +278,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/tzlog.dict:$(TARGET_COPY_OUT_VENDOR)/etc/tzlog.dict \
-    vendor/xiaomi/andromeda/proprietary/vendor/etc/ultrasound.wav:$(TARGET_COPY_OUT_VENDOR)/etc/ultrasound.wav \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/xiaomi/andromeda/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
@@ -360,7 +352,6 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
     audio.primary.msmnile \
@@ -1073,7 +1064,6 @@ PRODUCT_PACKAGES += \
     CACertService \
     CneApp \
     IWlanService \
-    QCC-TR-UI \
     SoterService \
     TimeService \
     uceShimService \
@@ -1185,21 +1175,13 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     cnss_diag \
-    diag_callback_sample \
-    diag_dci_sample \
-    diag_klog \
-    diag_mdlog \
-    diag_socket_log \
-    diag_uart_log \
     dpmQmiMgr \
     dspservice \
-    e_loop \
     embmsslServer \
     fidoca \
     fmconfig \
     fmfactorytest \
     fmfactorytestserver \
-    fstman \
     ftmdaemon \
     garden_app \
     hal_proxy_daemon \
@@ -1274,18 +1256,15 @@ PRODUCT_PACKAGES += \
     ppd \
     qcc-trd \
     qdcmss \
-    qmi_simple_ril_test \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
-    qseecom_sample_client \
     qseecomd \
     qti \
     qtigetprop \
     qtisetprop \
     rmt_storage \
     sec_nvm \
-    secure_ui_sample_client \
     sensors.qti \
     shsusrd \
     slad \
@@ -1298,7 +1277,6 @@ PRODUCT_PACKAGES += \
     ssr_diag \
     ssr_setup \
     subsystem_ramdump \
-    test_diag \
     tftp_server \
     thermal-engine \
     ti_audio \
@@ -1306,10 +1284,8 @@ PRODUCT_PACKAGES += \
     time_daemon \
     tloc_daemon \
     vendor.qti.hardware.soter@1.0-provision \
-    vendor_cmd_tool \
     vppservice \
     wdsdaemon \
-    xiaomi_extend_cmd \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent \

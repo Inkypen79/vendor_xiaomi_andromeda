@@ -125,28 +125,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libQTapGLES",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/egl/libQTapGLES.so"],
-			shared_libs: ["libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/egl/libQTapGLES.so"],
-			shared_libs: ["libcutils", "libdl", "libz", "liblog", "libc++", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "egl",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libq3dtools_adreno",
 	owner: "xiaomi",
 	strip: {
@@ -1031,12 +1009,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libacdb-fts.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libacdb-fts.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1052,12 +1026,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libacdbloader.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libtinyalsa", "libacdbrtac", "libadiertac", "libacdb-fts", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libacdbloader.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libtinyalsa", "libacdbrtac", "libadiertac", "libacdb-fts", "libion", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1073,12 +1043,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libacdbrtac.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libacdbrtac.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1409,12 +1375,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libcapiv2svacnn.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcapiv2svacnn.so"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1430,12 +1392,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libcapiv2vop.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcapiv2vop.so"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1787,12 +1745,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libgcs-calwrapper.so"],
 			shared_libs: ["libgcs-osal", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgcs-calwrapper.so"],
-			shared_libs: ["libgcs-osal", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1808,12 +1762,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libgcs-ipc.so"],
 			shared_libs: ["liblog", "libexpat", "libgcs-osal", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgcs-ipc.so"],
-			shared_libs: ["liblog", "libexpat", "libgcs-osal", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1829,12 +1779,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libgcs-osal.so"],
 			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgcs-osal.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -1850,12 +1796,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libgcs.so"],
 			shared_libs: ["libgcs-osal", "libgcs-calwrapper", "libgcs-ipc", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgcs.so"],
-			shared_libs: ["libgcs-osal", "libgcs-calwrapper", "libgcs-ipc", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -2102,12 +2044,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/liblistenjni.so"],
 			shared_libs: ["libutils", "liblog", "liblistensoundmodel2", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblistenjni.so"],
-			shared_libs: ["libutils", "liblog", "liblistensoundmodel2", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -2123,12 +2061,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/liblistensoundmodel2.so"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblistensoundmodel2.so"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
 }
@@ -13185,17 +13119,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QCC-TR-UI",
-	owner: "xiaomi",
-	apk: "proprietary/vendor/app/QCC-TR-UI/QCC-TR-UI.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "SoterService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/SoterService/SoterService.apk",
@@ -14246,108 +14169,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "diag_callback_sample",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/diag_callback_sample"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "diag_dci_sample",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/diag_dci_sample"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "diag_klog",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/diag_klog"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "diag_mdlog",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/diag_mdlog"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "diag_socket_log",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/diag_socket_log"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "diag_uart_log",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/diag_uart_log"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "dpmQmiMgr",
 	owner: "xiaomi",
 	target: {
@@ -14371,23 +14192,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/dspservice"],
 			shared_libs: ["libhidlbase", "libhardware", "libutils", "libcutils", "liblog", "libavservices_minijail", "vendor.qti.hardware.dsp@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "e_loop",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/e_loop"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -14473,23 +14277,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/fmfactorytestserver"],
 			shared_libs: ["libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "fstman",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/fstman"],
-			shared_libs: ["libnl", "libcutils", "liblog", "libutils", "libhidlbase", "libhidltransport", "vendor.qti.hardware.capabilityconfigstore@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15770,23 +15557,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qmi_simple_ril_test",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qmi_simple_ril_test"],
-			shared_libs: ["libqmi_cci", "libqmi", "libqmi_client_qmux", "libqcci_legacy", "libidl", "libqmiservices", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qrtr-cfg",
 	owner: "xiaomi",
 	target: {
@@ -15827,23 +15597,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qrtr-ns"],
 			shared_libs: ["libqrtr", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "qseecom_sample_client",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qseecom_sample_client"],
-			shared_libs: ["libion", "libcutils", "libutils", "liblog", "libQSEEComAPI", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15928,23 +15681,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/sec_nvm"],
 			shared_libs: ["liblog", "libutils", "libcutils", "libspcom", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "secure_ui_sample_client",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/secure_ui_sample_client"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libQSEEComAPI", "libsecureui_svcsock", "libSecureUILib", "libStDrvInt", "libhidlbase", "vendor.display.config@1.3", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16160,23 +15896,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "test_diag",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/test_diag"],
-			shared_libs: ["libdiag", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "tftp_server",
 	owner: "xiaomi",
 	target: {
@@ -16296,23 +16015,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor_cmd_tool",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vendor_cmd_tool"],
-			shared_libs: ["libnl", "libxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vppservice",
 	owner: "xiaomi",
 	target: {
@@ -16336,23 +16038,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/wdsdaemon"],
 			shared_libs: ["libdiag", "libcutils", "libbt-hidlclient", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "xiaomi_extend_cmd",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/xiaomi_extend_cmd"],
-			shared_libs: ["libqmi_cci", "libqmi_common_so", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
